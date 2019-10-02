@@ -20,8 +20,9 @@
 
 Cài đặt MegaCLI
 ```sh 
-wget https://github.com/nhanhoadocs/ghichep-megacli/blob/master/MegaCli8.07.14/Linux/MegaCli-8.07.14-1.noarch.rpm
-rpm -ivh MegaCli-8.07.14-1.noarch.rpm 
+yum install wget git -y
+git clone https://github.com/nhanhoadocs/ghichep-megacli.git
+rpm -ivh ghichep-megacli/Linux/MegaCli-8.07.14-1.noarch.rpm 
 echo "alias megacli='/opt/MegaRAID/MegaCli/MegaCli64'" >> /root/.bashrc
 source /root/.bashrc
 ```
@@ -35,9 +36,9 @@ yum install sg3_utils  -y
 
 Cách 1: Cài đặt trực tiếp
 ```sh
-sudo apt-get install wget sg3_utils  -y
-wget https://github.com/nhanhoadocs/ghichep-megacli/blob/master/MegaCli8.07.14/Linux/megacli_8.07.14-1_all.deb
-sudo dpkg -i megacli_8.07.14-1_all.deb
+sudo apt-get install wget sg3_utils git -y
+git clone https://github.com/nhanhoadocs/ghichep-megacli.git
+sudo dpkg -i ghichep-megacli/Linux/megacli_8.07.14-1_all.deb
 ```
 
 Tạo alias 
